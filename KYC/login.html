@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<!-- Latest compiled and minified CSS -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+.btn-social {
+background-color: #4CAF50;
+    color: white;   
+    height: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    padding-right: 10px;
+	padding-left: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-align: centre;
+	 min-width: 110px;
+	box-sizing: border-box;
+	margin: 10px 10px;
+	
+	
+	font-family: "Whitney SSm A", "Whitney SSm B", "Avenir", "Segoe UI", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 0;
+    line-height: 18px;
+    text-decoration: none !important;
+    vertical-align: middle !important;
+}
+form {
+    border: 3px solid #f1f1f1;
+}
+h2{
+	text-align:center;
+}
+p{
+	text-align:center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+.connect{
+	font-family:"Whitney SSm A", "Whitney SSm B", "Avenir", "Segoe UI", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.condition{
+	color: #979faf;
+	font-style: italic;
+	font-family:"Whitney SSm A", "Whitney SSm B", "Avenir", "Segoe UI", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+	font-weight:normal;
+
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	
+}
+.container-inner1{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.container-inner2{
+	width: 42%;
+	margin: 0 auto;
+
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
+<h2>Login Form</h2>
+
+  <div class="container">
+  <div class="container-inner1">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	<div style="text-align:center;"><a class="btn btn-social" href="./form.html">Login</a></div>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+  </div>
+
+  <div class="container-inner2">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+
+
+</body>
+</html>

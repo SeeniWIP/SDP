@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<!-- Latest compiled and minified CSS -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrapsocial.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>  
+
+<body>
+<script src="facebook.js"></script>
+<script type="text/javascript" src="linkedin.js">
+</script>
+
+<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+  api_key: 869iugb0pvp7j8
+  authorize: true
+	scope: r_basicprofile r_emailaddress
+	console.log("123");
+</script>
+
+<!-- <script type="text/javascript" src="http://platform.linkedin.com/in.js"> -->
+  <!-- api_key: 811ucrrtribf94 -->
+  <!-- authorize: true -->
+	<!-- scope: r_basicprofile r_emailaddress -->
+<!-- </script> -->
+
+
+<script type="text/javascript" src="google.js">        
+</script>
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+						 <!-- <div class="aligncenter"><h1>Single Digital Profile Of A Citizen</h1><a href="/login" id="container-show1" class="btn sociallogout btn-facebook" onclick="logout();"><i class="fa fa-facebook sociallogoutIcon"></i>Logout</a> </div> -->
+ 
+					 
+					  <div class="imgcontainer" >
+						<img id="picture1" src="digital.jpg" alt="Profile " class="avatar" width="50" height="50" style="border-radius:50%">
+					  </div>
+					  
+
+					<div id="container-hide" class="container-inner2" style="background-color:#f1f1f1">
+					<div class="aligncenter"><h1>Single Digital Profile Of A Citizen</h1><a href="/login" id="container-show1" class="btn sociallogout btn-facebook" onclick="logout();"><i class="fa fa-facebook sociallogoutIcon"></i>Logout</a> </div>
+					<p class="connect"> Sign In With Your Social Network </p>
+					<div class="social_links">
+					  
+						 <a class="btn btn-social btn-facebook" onclick="checkLoginState();"><i class="fa fa-facebook socialIcon"></i> Facebook</a>
+						 <!-- <a class="btn btn-social btn-linkedin" onclick="onLinkedInLoad();"><i class="fa fa-linkedin socialIcon"></i> LinkedIn</a> -->
+						  <!-- <a class="btn btn-social btn-google" onclick="handleAuthClick();"><i class="fa fa-google socialIcon"></i> Google</a> -->
+						 </div>
+						 <br><br>
+					<p class="condition">By signing up you agree to our Terms of Service and Privacy Policy</p>
+					  </div>
+					  
+					  
+					  
+					 <div id="container-hide2" class="container-inner2" style="background-color:#f1f1f1">
+					 <div class="aligncenter"><h1>Single Digital Profile Of A Citizen</h1><a href="/login" id="container-show1" class="btn sociallogout btn-facebook" onclick="logout();"><i class="fa fa-facebook sociallogoutIcon"></i>Logout</a> </div>
+					<p class="connect"> Sign In With Your Professional Network </p>
+					<div class="social_links">
+					  
+						 <!-- <a class="btn btn-social btn-facebook" onclick="checkLoginState();"><i class="fa fa-facebook socialIcon"></i> Facebook</a> -->
+						 <a class="btn btn-social btn-linkedin" onclick="onLinkedInLoad();"><i class="fa fa-linkedin socialIcon"></i> LinkedIn</a>
+						  <!-- <a class="btn btn-social btn-google" onclick="handleAuthClick();"><i class="fa fa-google socialIcon"></i> Google</a> -->
+						 </div>
+						 <br><br>
+					<p class="condition">By signing up you agree to our Terms of Service and Privacy Policy</p>
+					  </div>
+					  
+					  
+					  
+					   <div id="container-hide1" class="container-inner2" style="background-color:#f1f1f1">
+					   <div class="aligncenter"><h1>Single Digital Profile Of A Citizen</h1><a href="/login" id="container-show1" class="btn sociallogout btn-facebook" onclick="logout();"><i class="fa fa-facebook sociallogoutIcon"></i>Logout</a> </div>
+					<p class="connect"> Sign In With Your Personal Account </p>
+					<div class="social_links">
+					  
+						 <!-- <a class="btn btn-social btn-facebook" onclick="checkLoginState();"><i class="fa fa-facebook socialIcon"></i> Facebook</a> -->
+						 <!-- <a class="btn btn-social btn-linkedin" onclick="onLinkedInLoad();"><i class="fa fa-linkedin socialIcon"></i> LinkedIn</a> -->
+						 <a class="btn btn-social btn-google" onclick="handleAuthClick();"><i class="fa fa-google socialIcon"></i> Google</a>
+						 </div>
+						 <br><br>
+					<p class="condition">By signing up you agree to our Terms of Service and Privacy Policy</p>
+					  </div> 
+
+					  <div class="container">
+					  <div class="container-inner1 container-show" >
+					  
+					  
+					  
+						 <label><b>First Name</b></label>
+						<input type="text" id="first_name" placeholder="First Name" name="first_name" required> <br>
+						 <label><b>LastName</b></label>
+						<input type="text" id="last_name" placeholder="Last Name" name="last_name" required> <br>
+						 <label><b>Gender</b></label>
+						<input type="text" id="gender" placeholder="Gender" name="gender"> <br>
+						 <label><b>Email</b></label>
+						<input type="text" id="email" placeholder="existing Email" name="email" required> <br>
+						<label><b>Company</b></label>
+						<input type="text" id="company" placeholder="company" name="company" required> <br>
+						<label><b>Position</b></label>
+						<input type="text" id="position" placeholder="position" name="position" required> <br>
+						<label><b>Location</b></label>
+						<input type="text" id="location" placeholder=" your location" name="location" required> <br>
+						<label><b>Birthday</b></label>
+						<input type="text" id="birthday" placeholder="DD-MM-YYYY" required pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" name="birthday" required> <br>
+						<button type="submit" onclick="logoutgen()">Submit</button>
+						
+						 <!-- <a href="/login" class="btn btn-social btn-linkedin" onclick="logout();"><i class="fa fa-linkedin socialIcon"></i>Logout</a> -->
+						<!-- <a class="btn btn-social btn-facebook" onclick="logout();"><i class="fa fa-facebook socialIcon"></i>Logout</a> -->
+						<!-- <a href="/login" class="btn btn-social btn-facebook" onclick="logout();"><i class="fa fa-facebook socialIcon"></i>Logout</a>  -->
+					  </div>
+					  </div>
+                        
+                    </div>
+                </div>
+            </div>
+       
+		
+
+ 
+
+</body>
+</html>
